@@ -1,0 +1,7 @@
+C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.exe.config
+C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.exe
+C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.pdb
+C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.csproj.AssemblyReference.cache
+C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.csproj.CoreCompileInputs.cache
+C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.exe
+C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.pdb
