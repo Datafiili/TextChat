@@ -61,8 +61,7 @@ namespace ChatTextServer
             char[] buffer = new char[1024];
             StreamReader sr = new StreamReader(stream);
             await sr.ReadAsync(buffer, 0, 1024);
-            string Message = "";
-
+            
             //Checks for disconenct
             if (buffer[0] == 0)
             {
@@ -70,19 +69,27 @@ namespace ChatTextServer
                 return;
             }
 
-            for (int i = 0; i < buffer.Length; i++)
+            int endIndex = Array.IndexOf(buffer, (char)0);
+            if(endIndex != -1)
             {
-                if (buffer[i] != 0)
-                {
-                    Message += buffer[i];
-                }
-                else
-                {
-                    break;
-                }
+                endIndex = endIndex < 0 ? 1024 : endIndex; // For full buffer
+                char[] slicedBuffer = new char[endIndex];
+                Array.Copy(buffer, 0, slicedBuffer, 0, endIndex);
+                Console.WriteLine(slicedBuffer);
             }
-            Console.WriteLine(Message);
-            await ReceiveMessage();
+            else
+            {
+                Console.WriteLine(buffer);
+            }
+            
+            if (client.Connected == true)
+            {
+                await ReceiveMessage();
+            }
+            else
+            {
+                CloseStream();
+            }
         }
 
         static bool SendMessage()
