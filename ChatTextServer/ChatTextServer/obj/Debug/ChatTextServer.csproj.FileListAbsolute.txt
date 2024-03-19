@@ -5,3 +5,10 @@ C:\Users\aarnjunk\source\repos\ChatTextServer\ChatTextServer\obj\Debug\ChatTextS
 C:\Users\aarnjunk\source\repos\ChatTextServer\ChatTextServer\obj\Debug\ChatTextServer.csproj.CoreCompileInputs.cache
 C:\Users\aarnjunk\source\repos\ChatTextServer\ChatTextServer\obj\Debug\ChatTextServer.exe
 C:\Users\aarnjunk\source\repos\ChatTextServer\ChatTextServer\obj\Debug\ChatTextServer.pdb
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextServer\ChatTextServer\bin\Debug\ChatTextServer.exe.config
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextServer\ChatTextServer\bin\Debug\ChatTextServer.exe
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextServer\ChatTextServer\bin\Debug\ChatTextServer.pdb
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextServer\ChatTextServer\obj\Debug\ChatTextServer.csproj.AssemblyReference.cache
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextServer\ChatTextServer\obj\Debug\ChatTextServer.csproj.CoreCompileInputs.cache
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextServer\ChatTextServer\obj\Debug\ChatTextServer.exe
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextServer\ChatTextServer\obj\Debug\ChatTextServer.pdb

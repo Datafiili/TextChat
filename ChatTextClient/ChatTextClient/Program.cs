@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 
 namespace ChatTextClient
 {
@@ -66,8 +67,35 @@ namespace ChatTextClient
             char[] buffer = new char[1024];
             StreamReader sr = new StreamReader(stream);
             await sr.ReadAsync(buffer,0,1024);
-            Console.WriteLine(buffer);
-            await ReceiveMessage();
+            string Message = "";
+
+            //Checks for disconenct
+            if (buffer[0] == 0)
+            {
+                Console.WriteLine("Disconnected from server!");
+                return;
+            }
+
+            for (int i = 0; i < buffer.Length; i++)
+            {
+                if (buffer[i] != 0)
+                {
+                    Message += buffer[i];
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(Message);
+            if (client.Connected == true)
+            {
+                await ReceiveMessage();
+            }
+            else
+            {
+                CloseStream();
+            }
         }
 
         static bool SendMessage()

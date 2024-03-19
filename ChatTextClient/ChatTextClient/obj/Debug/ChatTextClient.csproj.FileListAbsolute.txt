@@ -5,3 +5,14 @@ C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextC
 C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.csproj.CoreCompileInputs.cache
 C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.exe
 C:\Users\aarnjunk\source\repos\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.pdb
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.exe.config
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.exe
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.pdb
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.csproj.AssemblyReference.cache
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.csproj.CoreCompileInputs.cache
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.exe
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.pdb
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.exe.manifest
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\bin\Debug\ChatTextClient.application
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.exe.manifest
+D:\Documents\Ohjelmointi\C#\TextChat-main\ChatTextClient\ChatTextClient\obj\Debug\ChatTextClient.application

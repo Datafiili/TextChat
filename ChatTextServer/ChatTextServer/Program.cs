@@ -29,6 +29,7 @@ namespace ChatTextServer
                     {
                         return;
                     }
+
                 }
             }
         }
@@ -37,7 +38,6 @@ namespace ChatTextServer
         {
             CreateServer();
             await RecieveClient();
-            
         }
 
         static void CreateServer()
@@ -53,16 +53,36 @@ namespace ChatTextServer
             
             Console.WriteLine("Client accepted.");
             stream = client.GetStream();
-            await RecieveMessage();
+            await ReceiveMessage();
         }
 
-        static async Task RecieveMessage()
+        static async Task ReceiveMessage()
         {
             char[] buffer = new char[1024];
-            StreamReader sr = new StreamReader(client.GetStream());
+            StreamReader sr = new StreamReader(stream);
             await sr.ReadAsync(buffer, 0, 1024);
-            Console.WriteLine(buffer);
-            await RecieveMessage();
+            string Message = "";
+
+            //Checks for disconenct
+            if (buffer[0] == 0)
+            {
+                Console.WriteLine("Client has disconnected!");
+                return;
+            }
+
+            for (int i = 0; i < buffer.Length; i++)
+            {
+                if (buffer[i] != 0)
+                {
+                    Message += buffer[i];
+                }
+                else
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(Message);
+            await ReceiveMessage();
         }
 
         static bool SendMessage()
@@ -74,7 +94,6 @@ namespace ChatTextServer
                 CloseStream();
                 return false;
             }
-
             messageToSend = Username + ": " + messageToSend;
             int byteCount = Encoding.UTF8.GetByteCount(messageToSend + 1);
             byte[] sendData = Encoding.UTF8.GetBytes(messageToSend);
